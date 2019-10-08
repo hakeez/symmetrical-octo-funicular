@@ -4,14 +4,14 @@
     
      <script language="JavaScript">
        
-        var prices = [3.25, 2.00, 1.50];
-        var quantity = [x, y, z];
-        console.log(prices);
-        console.log(quantity[1]);
        
        
         function myOrder(x,y,z)
         { 
+          var quantity = [x, y, z];
+          var prices = [3.25, 2.00, 1.50];
+          console.log(prices);
+          console.log(quantity[1]);
           s = "Your order is ";
           d = "$";
           var h_total = prices[0] * quantity[0];
