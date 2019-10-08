@@ -12,11 +12,12 @@
        
         function myOrder()
         { 
-          s = "";
+          s = "Your order is ";
+          d = "$";
           var h_total = prices[0] * quantity[0];
           var f_total = prices[1] * quantity[1];
           var d_total = prices[2] * quantity[2];
-          var total = h_total + f_dotal + d_total;
+          var total = h_total + f_total + d_total;
         
           if (total < 20)
           {
@@ -26,7 +27,7 @@
           {
             total = (total * .10) +  (total *.0625);
           }
-          alert("Hi");
+          alert(s+d);
           return total;
         } 
       
