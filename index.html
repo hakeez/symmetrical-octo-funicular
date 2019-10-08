@@ -5,9 +5,12 @@
      <script language="JavaScript">
        
         var prices = [3.25, 2.00, 1.50];
-        var quantity [x, y, z];
+        var quantity [x = 0, y = 0, z = 0];
+       
+       
         function myOrder()
         { 
+          s = "";
           var h_total = prices[0] * quantity[0];
           var f_total = prices[1] * quantity[1];
           var d_total = prices[2] * quantity[2];
@@ -21,7 +24,7 @@
         {
           total = (total * .10) +  (total *.0625)
         }
-        alert("Your total is");
+        alert("Hi");
         return total;
       } 
       
