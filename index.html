@@ -1,6 +1,33 @@
 <html>
   <head>
     <title> Joe's Hotdog Shop </title>
+    
+     <script language="JavaScript">
+       
+        var prices = [3.25, 2.00, 1.50];
+        var quantity [x, y, z];
+        function myOrder()
+        { 
+          var h_total = prices[0] * quantity[0];
+          var f_total = prices[1] * quantity[1];
+          var d_total = prices[2] * quantity[2];
+          var total = h_total + f_dotal + d_total;
+        
+        if total < 20
+        {
+          total = total + (total *.0625)
+        }
+        else
+        {
+          total = (total * .10) +  (total *.0625)
+        }
+        alert("Your total is");
+        return total;
+      } 
+      
+   
+    </script>
+    
   </head>
   
   
@@ -19,29 +46,13 @@
 
     <script language="JavaScript">
       <p id = "demo"> 0 Dollars</p>
-      document.getElementById("demo").innerHTML = <button onclick="myOrder()">Order Now!</button>
+      document.getElementById("demo").innerHTML = 
+      <button onclick="myOrder()">Order Now!</button>
       var prices = [3.25, 2.00, 1.50];
       var quantity [x, y, z];
       
       var total = 0;
 
-      function myOrder()
-      { 
-        var h_total = prices[0] * quantity[0];
-        var f_total = prices[1] * quantity[1];
-        var d_total = prices[2] * quantity[2];
-        var total = h_total + f_dotal + d_total;
-        
-        if total < 20
-        {
-          total = total + (total *.0625)
-        }
-        else
-        {
-          total = (total * .10) +  (total *.0625)
-        }
-        alert("Your total is");
-        return total;
       } 
       
    
