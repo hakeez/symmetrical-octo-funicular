@@ -6,7 +6,7 @@
   
   
   <body>
-    <p id = "demo"></p>
+    <p id = "demo"> 0 Dollars</p>
     <FORM>
     <h1> Joe's Hotdog Stand </h1>
     <br /> Hotdogs 3.25 <INPUT TYPE = "number" NAME = "x" MAXLENGTH = "15" SIZE = "15">
@@ -15,7 +15,7 @@
 
     </FORM>
       
-    <button onclick="myOrder()">Order Now!</button>
+    document.getElementById("demo").innerHTML = <button onclick="myOrder()">Order Now!</button>
 
     <script language="JavaScript">
       var prices = [3.25, 2.00, 1.50];
@@ -44,7 +44,7 @@
       
    
     </script>
-            document.getElementById("demo").innerHTML = total;   
+             
 
    
   </body>
