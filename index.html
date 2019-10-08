@@ -10,7 +10,7 @@
         console.log(quantity[1]);
        
        
-        function myOrder(quantity)
+        function myOrder(x,y,z)
         { 
           s = "Your order is ";
           d = "$";
@@ -46,6 +46,8 @@
     <br /> French Fries 2.00 <INPUT TYPE = "number" NAME = "y" MAXLENGTH = "15" SIZE = "15">
     <br /> Drinks 1.50 <INPUT TYPE = "number" NAME = "z" MAXLENGTH = "15" SIZE = "15">
     <p id = "demo"> 0 Dollars</p>
+      
+    
     
 
     
@@ -54,7 +56,7 @@
 
    
 
-      <button onclick="myOrder()">Order Now!</button>
+      <button onclick="myOrder(x, y, z)">Order Now!</button>
 
 
       
