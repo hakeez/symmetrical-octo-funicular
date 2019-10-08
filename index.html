@@ -21,13 +21,15 @@
       var prices = [3.25, 2.00, 1.50];
       var quantity [x, y, z];
       
+      var total = 0;
+      document.getElementById("demo").innerHTML = total;
    
       function myOrder()
       { 
         var h_total = prices[0] * quantity[0];
         var f_total = prices[1] * quantity[1];
         var d_total = prices[2] * quantity[2];
-        var total = h_total + f_dotal + f_total;
+        var total = h_total + f_dotal + d_total;
         
         if total < 20
         {
@@ -39,10 +41,14 @@
         }
       } 
 
-      alert("Your total is" document.getElementById("demo").innerHTML = total;
+      alert("Your total is" document.getElementById("demo").innerHTML = total);
       }
+      
+      document.getElementById("demo").innerHTML = total
     </script>
-      <p> Your order is "total" Dollars! </p>
+      
+
+   
   </body>
 </html>
   
