@@ -6,21 +6,40 @@
   
   
   <body>
+    <FORM>
     <h1> Joe's Hotdog Stand </h1>
-    <br /> Hotdogs 3.25 <INPUT NAME = "x" MAXLENGTH = "15" SIZE = "15">
-    <br /> French Fries 2.00 <INPUT NAME = "y" MAXLENGTH = "15" SIZE = "15">
-    <br /> Drinks 1.50 <INPUT NAME = "z" MAXLENGTH = "15" SIZE = "15">
+    <br /> Hotdogs 3.25 <INPUT TYPE = "number" NAME = "x" MAXLENGTH = "15" SIZE = "15">
+    <br /> French Fries 2.00 <INPUT TYPE = "number" NAME = "y" MAXLENGTH = "15" SIZE = "15">
+    <br /> Drinks 1.50 <INPUT TYPE = "number" NAME = "z" MAXLENGTH = "15" SIZE = "15">
 
+    </FORM>
+      
     <button onclick="myOrder()">Order Now!</button>
 
     <script language="JavaScript">
       var prices = [3.25, 2.00, 1.50];
       var quantity [x, y, z];
+      
    
       function myOrder()
+      { 
+        var h_total = prices[0] * quantity[0];
+        var f_total = prices[1] * quantity[1];
+        var d_total = prices[2] * quantity[2];
+        var total = h_total + f_dotal + f_total;
+        
+        if total < 20
+        {
+          total = total + (total *.0625)
+        }
+        else
+        {
+          total = (total * .10) +  (total *.0625)
+        }
+      } 
       
-    
     </script>
+      <p> Your order is "total" Dollars! </p>
   </body>
 </html>
   
